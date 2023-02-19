@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import bgImage from  "/src/resources/img/banner.png"
+
 
 const ItemListContainer = ({ greeting }) => {
 	return (
