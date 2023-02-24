@@ -5,7 +5,7 @@
         "product": "Alimento Excellent Pollo y Arroz",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": "./public/img/",
+        "image": "./public/img/pet1.webp",
         "price": 10895,
         "description": "Adulto +7 - 15kg "
     },
@@ -15,7 +15,7 @@
         "product": "Alimento Excellent Gato Sterilized Pollo ",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/190850-150-150/150067-150065--1-.jpg?v=638059271967100000",
+        "image": " ",
         "price": 10105,
         "description": "7,5 Kg"
     },
@@ -25,7 +25,7 @@
         "product": "Alimento Club Performance Adulto",
         "category": "Alimento",
         "subCategory": "Alimento Seco",
-        "image": " https://puppis.vteximg.com.br/arquivos/ids/172829-150-150/168003-1.jpg?v=637350103647730000",
+        "image": "",
         "price": 14505,
         "description": "20 Kg "
     },
@@ -35,7 +35,7 @@
         "product": "Lata Sieger Criadores Para Perro Adulto y Cachorro ",
         "category": " Alimento",
         "subCategory": " Alimento Húmedo ",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/190819-150-150/132181.jpg?v=638055143947170000 ",
+        "image": "",
         "price": 463,
         "description": " 340 grs"
     },
@@ -45,7 +45,7 @@
         "product": "Lata Sieger Pollo Para Gato Adulto ",
         "category": " Alimento ",
         "subCategory": " Alimento Húmedo",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/190811-150-150/132173.jpg?v=638055133678330000 ",
+        "image": "",
         "price": 695,
         "description": " 360 grs "
     },
@@ -55,7 +55,7 @@
         "product": "Moises WePets Chic Denim Pradera",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/184634-150-150/244229.jpg?v=637750189680700000 ",
+        "image": "",
         "price": 5200,
         "description": "Lavable. Talle Único"
     },
@@ -65,7 +65,7 @@
         "product": "Moises Puppis Nido Corderito ",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/186419-150-150/269231.jpg?v=637865778768370000",
+        "image": "",
         "price": 7610,
         "description": "55x17 cm"
     },
@@ -75,7 +75,7 @@
         "product": "Cama Huella Oslo Verde",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/176427-150-150/230180.jpg?v=637546239901000000",
+        "image": "",
         "price": 25000,
         "description": "Talle L"
     },
@@ -85,7 +85,7 @@
         "product": "Almohadon Huella Oval Rosa ",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": " https://puppis.vteximg.com.br/arquivos/ids/176798-150-150/230106.jpg?v=637556935776400000",
+        "image": " ",
         "price": 9750,
         "description": " Talle S "
     },
@@ -95,7 +95,7 @@
         "product": "Pretal ",
         "category": " Accesorios",
         "subCategory": " Paseo",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/162066-150-150/Arnes-Easy-Rosa-Small.jpg?v=636480716481000000 ",
+        "image": " ",
         "price": 1700,
         "description": "Rosa. Razas pequeñas "
     },
@@ -105,7 +105,7 @@
         "product": "Correa Puppis Joy  ",
         "category": "Accesorios",
         "subCategory": " Paseo",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/189261-150-150/269368.jpg?v=637979987045470000 ",
+        "image": " ",
         "price": 3000,
         "description": "Talle S "
     },
@@ -115,7 +115,7 @@
         "product": " Bettera Atman Acrilica con Division ",
         "category": " Accesorios",
         "subCategory": " Peceras y Acuarios",
-        "image": "https://puppis.vteximg.com.br/arquivos/ids/183763-150-150/Bettera-2.jpg?v=637713731871500000 ",
+        "image": " ",
         "price": 5640,
         "description": " "
     }
