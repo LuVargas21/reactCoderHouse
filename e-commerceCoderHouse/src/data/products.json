@@ -5,7 +5,7 @@
         "product": "Alimento Excellent Pollo y Arroz",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": "./public/img/pet1.webp",
+        "image": "public/img/pet1.webp",
         "price": 10895,
         "description": "Adulto +7 - 15kg "
     },
@@ -15,7 +15,7 @@
         "product": "Alimento Excellent Gato Sterilized Pollo ",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": " ",
+        "image": "public/img/pet2.webp ",
         "price": 10105,
         "description": "7,5 Kg"
     },
@@ -25,7 +25,7 @@
         "product": "Alimento Club Performance Adulto",
         "category": "Alimento",
         "subCategory": "Alimento Seco",
-        "image": "",
+        "image": "public/img/pet3.webp",
         "price": 14505,
         "description": "20 Kg "
     },
@@ -35,7 +35,7 @@
         "product": "Lata Sieger Criadores Para Perro Adulto y Cachorro ",
         "category": " Alimento",
         "subCategory": " Alimento Húmedo ",
-        "image": "",
+        "image": "public/img/pet4.webp",
         "price": 463,
         "description": " 340 grs"
     },
@@ -45,7 +45,7 @@
         "product": "Lata Sieger Pollo Para Gato Adulto ",
         "category": " Alimento ",
         "subCategory": " Alimento Húmedo",
-        "image": "",
+        "image": "public/img/pet5.webp",
         "price": 695,
         "description": " 360 grs "
     },
@@ -55,7 +55,7 @@
         "product": "Moises WePets Chic Denim Pradera",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "",
+        "image": "public/img/pet6.webp",
         "price": 5200,
         "description": "Lavable. Talle Único"
     },
@@ -65,7 +65,7 @@
         "product": "Moises Puppis Nido Corderito ",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "",
+        "image": "public/img/pet7.webp",
         "price": 7610,
         "description": "55x17 cm"
     },
@@ -75,7 +75,7 @@
         "product": "Cama Huella Oslo Verde",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "",
+        "image": "public/img/pet8.webp",
         "price": 25000,
         "description": "Talle L"
     },
@@ -85,7 +85,7 @@
         "product": "Almohadon Huella Oval Rosa ",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": " ",
+        "image": "public/img/pet9.webp ",
         "price": 9750,
         "description": " Talle S "
     },
@@ -95,7 +95,7 @@
         "product": "Pretal ",
         "category": " Accesorios",
         "subCategory": " Paseo",
-        "image": " ",
+        "image": "public/img/pet10.webp ",
         "price": 1700,
         "description": "Rosa. Razas pequeñas "
     },
@@ -105,7 +105,7 @@
         "product": "Correa Puppis Joy  ",
         "category": "Accesorios",
         "subCategory": " Paseo",
-        "image": " ",
+        "image": "public/img/pet11.webp ",
         "price": 3000,
         "description": "Talle S "
     },
@@ -115,7 +115,7 @@
         "product": " Bettera Atman Acrilica con Division ",
         "category": " Accesorios",
         "subCategory": " Peceras y Acuarios",
-        "image": " ",
+        "image": "public/img/pet12.webp ",
         "price": 5640,
         "description": " "
     }

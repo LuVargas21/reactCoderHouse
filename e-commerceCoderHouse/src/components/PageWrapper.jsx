@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const PageWrapper = (props) => {
-  return (
-    <div>
-      {props.children}
-    </div>
-  )
-}
+	return (
+		<div>
+			{props.children}
+		</div>
+	);
+};
 
-export default PageWrapper
+export default PageWrapper;

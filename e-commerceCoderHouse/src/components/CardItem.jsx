@@ -8,7 +8,7 @@ const CardItem = (props) => {
       <Card maxW='sm'>
   <CardBody>
     <Image
-      src={props.img}
+      src={props.image}
       alt=' '
       borderRadius='lg'
     />
