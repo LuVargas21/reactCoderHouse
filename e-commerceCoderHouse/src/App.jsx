@@ -13,15 +13,16 @@ import NavBar from "./components/NavBar";
 import CardItem from "./components/CardItem";
 import CardItemJson from "./data/products.json";
 import PageWrapper from "./components/PageWrapper";
+import WelcomeGreeting from "./components/Greeting";
 import "./App.css";
 const App = () => {
 	let products = CardItemJson;
 	return (
 		<PageWrapper>
-<NavBar></NavBar>
-
+			<NavBar></NavBar>
+			<WelcomeGreeting greeting={"¡HOLA! GRACIAS POR VISITARNOS.♥"} />
 			{products.map((product) => (
-				<CardItem key= {product.idProduct}></CardItem>
+				<CardItem key={product.idProduct}></CardItem>
 			))}
 		</PageWrapper>
 	);

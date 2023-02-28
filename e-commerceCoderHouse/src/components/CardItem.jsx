@@ -1,7 +1,8 @@
 import React from 'react'
-import {Card, CardBody, CardFooter, SimpleGrid, Image, Stack, Heading, Text, Divider, Button, ButtonGroup} from '@chakra-ui/react'
+import {Box, Card, CardBody, CardFooter, SimpleGrid, Image, Stack, Heading, Text, Divider, Button, ButtonGroup} from '@chakra-ui/react'
 
 const CardItem = (props) => {
+
   return (
     <div>
       <SimpleGrid spacing={10} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>

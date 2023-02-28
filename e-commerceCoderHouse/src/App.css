@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+.body{
+  font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Flex', sans-serif;
 
+}
 .logo {
   height: 6em;
   padding: 1.5em;
