@@ -38,7 +38,6 @@ const NavBar = () => {
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
 								Gatos
-								
 							</a>
 						</li>
 						<li className="nav-item">
@@ -55,12 +54,14 @@ const NavBar = () => {
 						</li>
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
-								Roedores
+								Otras especies
 								
 							</a>
 						</li>
 					</ul>
+				
 					<CartWidget />
+				
 					<form className="d-flex" role="search">
 						<input
 							className="form-control me-2"

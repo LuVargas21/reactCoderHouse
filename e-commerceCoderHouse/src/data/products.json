@@ -1,6 +1,6 @@
 [
     {
-        "idProduct": "1",
+        "id": "1",
         "animal": "Perro",
         "product": "Alimento Excellent Pollo y Arroz",
         "category": "  Alimento",
@@ -10,7 +10,7 @@
         "description": "Adulto +7 - 15kg "
     },
     {
-        "idProduct": "2",
+        "id": "2",
         "animal": "Perro",
         "product": "Alimento Excellent Gato Sterilized Pollo ",
         "category": "  Alimento",
@@ -20,7 +20,7 @@
         "description": "7,5 Kg"
     },
     {
-        "idProduct": "3",
+        "id": "3",
         "animal": "Perro",
         "product": "Alimento Club Performance Adulto",
         "category": "Alimento",
@@ -30,7 +30,7 @@
         "description": "20 Kg "
     },
     {
-        "idProduct": "4",
+        "id": "4",
         "animal": "Perro",
         "product": "Lata Sieger Criadores Para Perro Adulto y Cachorro ",
         "category": " Alimento",
@@ -40,7 +40,7 @@
         "description": " 340 grs"
     },
     {
-        "idProduct": "5",
+        "id": "5",
         "animal": "Gato",
         "product": "Lata Sieger Pollo Para Gato Adulto ",
         "category": " Alimento ",
@@ -50,7 +50,7 @@
         "description": " 360 grs "
     },
     {
-        "idProduct": "6",
+        "id": "6",
         "animal": "Gato",
         "product": "Moises WePets Chic Denim Pradera",
         "category": "Accesorios",
@@ -60,7 +60,7 @@
         "description": "Lavable. Talle Único"
     },
     {
-        "idProduct": "7",
+        "id": "7",
         "animal": "Gato",
         "product": "Moises Puppis Nido Corderito ",
         "category": "Accesorios",
@@ -70,7 +70,7 @@
         "description": "55x17 cm"
     },
     {
-        "idProduct": "8",
+        "id": "8",
         "animal": "Perro",
         "product": "Cama Huella Oslo Verde",
         "category": "Accesorios",
@@ -80,7 +80,7 @@
         "description": "Talle L"
     },
     {
-        "idProduct": "9",
+        "id": "9",
         "animal": "Perro",
         "product": "Almohadon Huella Oval Rosa ",
         "category": "Accesorios",
@@ -90,7 +90,7 @@
         "description": " Talle S "
     },
     {
-        "idProduct": "10",
+        "id": "10",
         "animal": "Perro",
         "product": "Pretal ",
         "category": " Accesorios",
@@ -100,7 +100,7 @@
         "description": "Rosa. Razas pequeñas "
     },
     {
-        "idProduct": "11",
+        "id": "11",
         "animal": "Perro",
         "product": "Correa Puppis Joy  ",
         "category": "Accesorios",
@@ -110,7 +110,7 @@
         "description": "Talle S "
     },
     {
-        "idProduct": "12",
+        "id": "12",
         "animal": "Peces",
         "product": " Bettera Atman Acrilica con Division ",
         "category": " Accesorios",
