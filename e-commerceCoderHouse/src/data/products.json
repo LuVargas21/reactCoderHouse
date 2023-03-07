@@ -6,7 +6,7 @@
         "categoryId" : "1",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": "public/img/pet1.webp",
+        "image": "/img/pet1.webp",
         "price": 10895,
         "description": "Adulto +7 - 15kg "
     },
@@ -17,7 +17,7 @@
         "categoryId" : "1",
         "category": "  Alimento",
         "subCategory": "Alimento Seco",
-        "image": "public/img/pet2.webp ",
+        "image": "/img/pet2.webp ",
         "price": 10105,
         "description": "7,5 Kg"
     },
@@ -28,7 +28,7 @@
         "categoryId" : "1",
         "category": "Alimento",
         "subCategory": "Alimento Seco",
-        "image": "public/img/pet3.webp",
+        "image": "/img/pet3.webp",
         "price": 14505,
         "description": "20 Kg "
     },
@@ -39,7 +39,7 @@
         "categoryId" : "1",
         "category": " Alimento",
         "subCategory": " Alimento Húmedo ",
-        "image": "public/img/pet4.webp",
+        "image": "/img/pet4.webp",
         "price": 463,
         "description": " 340 grs"
     },
@@ -50,7 +50,7 @@
         "categoryId" : "1",
         "category": " Alimento ",
         "subCategory": " Alimento Húmedo",
-        "image": "public/img/pet5.webp",
+        "image": "/img/pet5.webp",
         "price": 695,
         "description": " 360 grs "
     },
@@ -61,7 +61,7 @@
         "categoryId" : "2",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "public/img/pet6.webp",
+        "image": "/img/pet6.webp",
         "price": 5200,
         "description": "Lavable. Talle Único"
     },
@@ -72,7 +72,7 @@
         "categoryId" : "2",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "public/img/pet7.webp",
+        "image": "/img/pet7.webp",
         "price": 7610,
         "description": "55x17 cm"
     },
@@ -83,7 +83,7 @@
         "categoryId" : "2",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "public/img/pet8.webp",
+        "image": "/img/pet8.webp",
         "price": 25000,
         "description": "Talle L"
     },
@@ -94,7 +94,7 @@
         "categoryId" : "2",
         "category": "Accesorios",
         "subCategory": "Camas y Mantas",
-        "image": "public/img/pet9.webp ",
+        "image": "/img/pet9.webp ",
         "price": 9750,
         "description": " Talle S "
     },
@@ -105,7 +105,7 @@
         "category": " Accesorios",
         "categoryId" : "2",
         "subCategory": " Paseo",
-        "image": "public/img/pet10.webp ",
+        "image": "/img/pet10.webp ",
         "price": 1700,
         "description": "Rosa. Razas pequeñas "
     },
@@ -116,7 +116,7 @@
         "categoryId" : "2",
         "category": "Accesorios",
         "subCategory": " Paseo",
-        "image": "public/img/pet11.webp ",
+        "image": "/img/pet11.webp ",
         "price": 3000,
         "description": "Talle S "
     },
@@ -127,7 +127,7 @@
         "categoryId" : "2",
         "category": " Accesorios",
         "subCategory": " Peceras y Acuarios",
-        "image": "public/img/pet12.webp ",
+        "image": "/img/pet12.webp ",
         "price": 5640,
         "description": " "
     },
@@ -138,7 +138,7 @@
         "categoryId" : "3",
         "category": " Jueguetes",
         "subCategory": " Juguetes ",
-        "image": "public/img/pet13.webp ",
+        "image": "/img/pet13.webp ",
         "price": 2500,
         "description": " "
     },
@@ -149,7 +149,7 @@
         "categoryId" : "4",
         "category": " Estetica e Higiene",
         "subCategory": " Shampoo ",
-        "image": "public/img/pet14.webp ",
+        "image": "/img/pet14.webp ",
         "price": 1700,
         "description": " 180ml "
     },
@@ -160,7 +160,7 @@
         "categoryId" : "4",
         "category": " Estetica e Higiene",
         "subCategory": " Cepillos y Guantes ",
-        "image": "public/img/pet15.webp ",
+        "image": "/img/pet15.webp ",
         "price": 2400,
         "description": "Cerda media "
     },
@@ -169,9 +169,9 @@
         "animal": "Gatos",
         "product": "Felline Full Spot",
         "categoryId" : "5",
-        "category": " Salud",
+        "category": "Salud",
         "subCategory": "Antiparasitario",
-        "image": "public/img/pet16.webp ",
+        "image": "/img/pet16.webp ",
         "price": 1700,
         "description": "De 1 a 2 kg "
     }

@@ -1,81 +1,86 @@
-import { Box } from "@chakra-ui/react";
-import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
-
-const NavBar = () => {
+function NavBar() {
 	return (
-		<div>
-			<nav className="navbar navbar-expand-lg light container-fluid">
+		<Navbar bg="light" expand="lg">
+			<Container>
 				<Link to="/">
-					<img
-						src="./src/assets/logo.png"
-						alt="Logo"
-						width="100"
-						height="70"
-						className="d-inline-block align-text-top"
-					/>
+					<Navbar.Brand>
+						<img
+							src="../src/assets/logo.png"
+							alt="Logo"
+							width="130"
+							height="70"
+							className="d-inline-block align-text-top"
+						/>
+					</Navbar.Brand>
 				</Link>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="me-auto">
+						<Link to="/">
+							<Nav.Link>Home</Nav.Link>{" "}
+						</Link>
+						<Nav.Link href="#link">Nosotros</Nav.Link>
+						<NavDropdown title="Mascotas" id="basic-nav-dropdown">
+							<NavDropdown.Item href="#action/3.1">
+								<img
+									src="../src/assets/animalsImg/perro.png"
+									alt="Logo"
+									width="30"
+									className="d-inline-block align-text-top"
+								/>
 								Perros
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
+							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.2">
+								<img
+									src="../src/assets/animalsImg/gato.png"
+									alt="Logo"
+									width="30"
+									className="d-inline-block align-text-top"
+								/>
 								Gatos
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
+							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">
+								<img
+									src="../src/assets/animalsImg/pez.png"
+									alt="Logo"
+									width="30"
+									className="d-inline-block align-text-top"
+								/>
 								Peces
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
+							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.4">
+								<img
+									src="../src/assets/animalsImg/ave.png"
+									alt="Logo"
+									width="30"
+									className="d-inline-block align-text-top"
+								/>
 								Aves
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
-								Otras especies
-							</a>
-						</li>
-					</ul>
-
+							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.4">
+								<img
+									src="../src/assets/animalsImg/conejo.png"
+									alt="Logo"
+									width="30"
+									className="d-inline-block align-text-top"
+								/>
+								Otras Especies
+							</NavDropdown.Item>
+						</NavDropdown>
+					</Nav>
 					<Link to={"/cart "}>
-						
 						<CartWidget />
 					</Link>
-
-					<form className="d-flex" role="search">
-						<input
-							className="form-control me-2"
-							type="search"
-							placeholder="Buscar"
-							aria-label="Search"
-						/>
-						<button className="btn btn-outline-success" type="submit">
-							Buscar
-						</button>
-					</form>
-				</div>
-			</nav>
-		</div>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 	);
-};
+}
 
 export default NavBar;

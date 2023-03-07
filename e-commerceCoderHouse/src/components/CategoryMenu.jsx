@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const CategoryMenu = () => {
 	return (
 		<div>
+		
 			<div className=" menuContainer ">
 				<br />
 				<h2 className="menuTitle"> Categorías</h2>
@@ -13,7 +14,7 @@ const CategoryMenu = () => {
 					<div className="col">
 						<Link to="/catalogue/1">
 							<img
-								src="./src/assets/category/alimento.png"
+								src="../src/assets/category/comida.png"
 								width="50"
 								height="50"
 								alt="Alimentos"
@@ -24,7 +25,7 @@ const CategoryMenu = () => {
 					<div className="col">
 						<Link to="/catalogue/2 ">
 							<img
-								src="./src/assets/category/accesorio.png"
+								src="../src/assets/category/cama.png"
 								width="50"
 								height="50"
 								alt="Accesorios"
@@ -35,7 +36,7 @@ const CategoryMenu = () => {
 					<div className="col">
 						<Link to="/catalogue/3 ">
 							<img
-								src="./src/assets/category/juguete.png"
+								src="../src/assets/category/juguetes.png"
 								width="50"
 								height="50"
 							/>
@@ -45,7 +46,7 @@ const CategoryMenu = () => {
 					<div className="col">
 						<Link to="/catalogue/4 ">
 							<img
-								src="./src/assets/category/higiene.png"
+								src="../src/assets/category/banos.png"
 								width="50"
 								height="50"
 								alt="Higiene"
@@ -54,9 +55,9 @@ const CategoryMenu = () => {
 						</Link>
 					</div>
 					<div className="col">
-						<Link to=" /catalogue/5">
+						<Link to="/catalogue/5">
 							<img
-								src="./src/assets/category/salud.png"
+								src="../src/assets/category/medico.png"
 								width="50"
 								height="50"
 								alt="Salud"

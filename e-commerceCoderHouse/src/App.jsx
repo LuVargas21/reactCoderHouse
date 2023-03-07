@@ -8,6 +8,7 @@ import CategoryMenu from "./components/CategoryMenu";
 import ItemListContainer from "./components/ItemListContainer"
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 
 const App = () => {
 	let products = CardItemJson;
@@ -22,7 +23,7 @@ const App = () => {
 			<Route exact path ="/catalogue/:categoryId" element={<ItemListContainer/>}/>
 		
 			</Routes>
-
+<Footer></Footer>
 		</div>
 	);
 };

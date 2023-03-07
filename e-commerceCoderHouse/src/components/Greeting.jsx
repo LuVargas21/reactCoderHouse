@@ -1,24 +1,23 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 
-import { extendTheme } from "@chakra-ui/react";
-
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 const WelcomeGreeting = ({ greeting }) => {
 	return (
 		<div>
-			<Box h="5vh" bg="brand.secondary">
-				{greeting="¡HOLA! GRACIAS POR VISITARNOS.♥"}
+			<Box h="20hv" bg="brand.secondary">
+			<img
+						src="../src/assets/ohmydog.png"
+						alt="Logo"
+						width="120"
+						height="70"
+						className="d-inline-block align-text-top"
+					/>
+					<br />
+				{(greeting = "¡HOLA! GRACIAS POR VISITARNOS.♥")}
 			</Box>
-
-			<Box>
-				<img src="./src/assets/bannerbanco.png"></img>
-			</Box>
-
-
-			
 		</div>
-
-
 	);
 };
 
