@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { Card, Button, Col, Row } from "react-bootstrap";
-import { Box } from "@chakra-ui/react";
+import { Card, Button } from "react-bootstrap";
+import {Box} from "@chakra-ui/react"
 
 function CardItem(props) {
+	
+	const product = props.product;
+
 	const [count, setCount] = useState(0);
 
 	const incrementCount = () => {
@@ -19,29 +22,20 @@ function CardItem(props) {
 
 	return (
 		<div>
-			<Row xs={1} md={4} className="g-4">
-				{Array.from({ length: 4 }).map((_, id) => (
-					<Col>
-						<Card >
-							<Card.Img
-								variant="top"
-								src="./public/img/pet1.webp
-            "
-							/>
-							<Card.Body>
-								<Card.Title>Producto</Card.Title>
-								<Card.Text>Descripcion del producto</Card.Text>
-								<div>
-									<Button onClick={decrementCount}>-</Button>
-									<input type="number" value={count} min="0" max="10" />
-									<Button onClick={incrementCount}>+</Button>
-								</div>
-								;
-							</Card.Body>
-						</Card>
-					</Col>
-				))}
-			</Row>
+			<Card key={product.id}>
+              <Card.Img variant="top" src={product.image} />
+              <Card.Body>
+                <Card.Title>{product.product}</Card.Title>
+                <Card.Text>{product.description}</Card.Text>
+				<Card.Title>{`$${product.price}`}</Card.Title>
+                <Box>
+                  <Button onClick={decrementCount}>-</Button>
+                  <input type="number" value={count} min="0" max="10" />
+                  <Button onClick={incrementCount}>+</Button>
+                </Box>
+				<Button>Añadir al carrito</Button>
+              </Card.Body>
+            </Card>
 		</div>
 	);
 }

@@ -1,29 +1,28 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Category = () => {
-  return (
-    <div>
-      
+const CategoryMenu = () => {
+	return (
+		<div>
 			<div className=" menuContainer ">
-                <br />
+				<br />
 				<h2 className="menuTitle"> Categorías</h2>
-                <br /> 
-                <br />
+				<br />
+				<br />
 				<div className="row">
 					<div className="col">
-						<a href="">
+						<Link to="/catalogue/1">
 							<img
 								src="./src/assets/category/alimento.png"
 								width="50"
 								height="50"
 								alt="Alimentos"
 							/>
-					<p className="textMenu">Alimentos</p>
-						</a>
-                        
+							<p className="textMenu">Alimentos</p>
+						</Link>
 					</div>
 					<div className="col">
-						<a href="">
+						<Link to="/catalogue/2 ">
 							<img
 								src="./src/assets/category/accesorio.png"
 								width="50"
@@ -31,20 +30,20 @@ const Category = () => {
 								alt="Accesorios"
 							/>
 							<p className="textMenu">Accesorios</p>
-						</a>
+						</Link>
 					</div>
-                    <div className="col">
-						<a href="">
+					<div className="col">
+						<Link to="/catalogue/3 ">
 							<img
 								src="./src/assets/category/juguete.png"
 								width="50"
 								height="50"
 							/>
 							<p className="textMenu">Juguetes</p>
-						</a>
+						</Link>
 					</div>
 					<div className="col">
-						<a href="">
+						<Link to="/catalogue/4 ">
 							<img
 								src="./src/assets/category/higiene.png"
 								width="50"
@@ -52,24 +51,23 @@ const Category = () => {
 								alt="Higiene"
 							/>
 							<p className="textMenu">Estética e Higiene</p>
-						</a>
+						</Link>
 					</div>
 					<div className="col">
-						<a href="">
+						<Link to=" /catalogue/5">
 							<img
-							src="./src/assets/category/salud.png"
-                            width="50"
-                            height="50"
+								src="./src/assets/category/salud.png"
+								width="50"
+								height="50"
 								alt="Salud"
 							/>
 							<p className="textMenu">Salud</p>
-						</a>
+						</Link>
 					</div>
-                    
 				</div>
 			</div>
-    </div>
-  )
-}
+		</div>
+	);
+};
 
-export default Category
+export default CategoryMenu;

@@ -1,14 +1,13 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
-import CardItem from "./components/CardItem";
 import CardItemJson from "./data/products.json";
-import PageWrapper from "./components/PageWrapper";
+import HomePage from "./components/HomePage";
 import WelcomeGreeting from "./components/Greeting";
-import Slider from "./components/Slider";
+import CategoryMenu from "./components/CategoryMenu";
+import ItemListContainer from "./components/ItemListContainer"
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Category from "./components/Category";
 
 const App = () => {
 	let products = CardItemJson;
@@ -16,16 +15,14 @@ const App = () => {
 		<div>
 			<NavBar />
 			<WelcomeGreeting />
-			<Slider></Slider>
-			<Category></Category>
-			<PageWrapper>
-				<Box h="7vh" >
-					<h1>Productos destacados</h1>
-				</Box>
-				{products.map((product) => (
-					<CardItem key={product.id}></CardItem>
-				))}
-			</PageWrapper>
+			<CategoryMenu />
+			
+			<Routes> 
+			<Route exact path="/" element={<HomePage />} /> 
+			<Route exact path ="/catalogue/:categoryId" element={<ItemListContainer/>}/>
+		
+			</Routes>
+
 		</div>
 	);
 };

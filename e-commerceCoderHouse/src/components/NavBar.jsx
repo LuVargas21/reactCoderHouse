@@ -1,12 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg bg-light container-fluid">
-				<a className="navbar-brand" href="#">
+			<nav className="navbar navbar-expand-lg light container-fluid">
+				<Link to="/">
 					<img
 						src="./src/assets/logo.png"
 						alt="Logo"
@@ -14,8 +15,7 @@ const NavBar = () => {
 						height="70"
 						className="d-inline-block align-text-top"
 					/>
-				</a>
-
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -32,7 +32,6 @@ const NavBar = () => {
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
 								Perros
-							
 							</a>
 						</li>
 						<li className="nav-item">
@@ -43,25 +42,25 @@ const NavBar = () => {
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
 								Peces
-								
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
 								Aves
-								
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
 								Otras especies
-								
 							</a>
 						</li>
 					</ul>
-				
-					<CartWidget />
-				
+
+					<Link to={"/cart "}>
+						
+						<CartWidget />
+					</Link>
+
 					<form className="d-flex" role="search">
 						<input
 							className="form-control me-2"
