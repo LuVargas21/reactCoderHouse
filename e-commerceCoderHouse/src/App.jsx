@@ -5,7 +5,7 @@ import CardItemJson from "./data/products.json";
 import HomePage from "./components/HomePage";
 import WelcomeGreeting from "./components/Greeting";
 import CategoryMenu from "./components/CategoryMenu";
-import ItemListContainer from "./components/ItemListContainer"
+import ItemListContainer from "./components/ItemListContainer";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -17,13 +17,16 @@ const App = () => {
 			<NavBar />
 			<WelcomeGreeting />
 			<CategoryMenu />
-			
-			<Routes> 
-			<Route exact path="/" element={<HomePage />} /> 
-			<Route exact path ="/catalogue/:categoryId" element={<ItemListContainer/>}/>
-		
+
+			<Routes>
+				<Route exact path="/" element={<HomePage />} />
+				<Route
+					exact
+					path="/catalogue/:categoryId"
+					element={<ItemListContainer />}
+				/>
 			</Routes>
-<Footer></Footer>
+			<Footer />
 		</div>
 	);
 };
