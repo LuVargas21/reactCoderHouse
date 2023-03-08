@@ -8,7 +8,6 @@ const HomePage = (props) => {
 	return (
 		<div>
 			<Slider />
-			<CategoryMenu />
 			<Box h="7vh">
 				<br />
 				<h1>Productos destacados del mes</h1>
