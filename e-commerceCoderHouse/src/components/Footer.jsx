@@ -24,12 +24,51 @@ function Footer() {
 							25 de Mayo 295 | General Paz | Córdoba
 						</i>
 					</Col>
+
 					<Col xs={6}>
 						<br />
 						<img
-							src="../src/assets/mercadopago_logos.jpg"
+							src="../src/assets/othersImg/visa.png"
 							alt="Logo"
-							width="450"
+							width="60"
+							className="d-inline-block"
+						/>{" "}
+						<img
+							src="../src/assets/othersImg/american-express.png"
+							alt="Logo"
+							width="60"
+							className="d-inline-block"
+						/>
+            	<img
+							src="../src/assets/othersImg/master.png"
+							alt="Logo"
+							width="70"
+							className="d-inline-block"
+						/>
+						<br />
+						<img
+							src="../src/assets/othersImg/mercadopago.png"
+							alt="Logo"
+							width="120"
+							className="d-inline-block"
+						/>
+						<img
+							src="../src/assets/othersImg/rapipago.png"
+							alt="Logo"
+							width="121"
+							className="d-inline-block"
+						/>
+						<p>EFECTIVO Y TRANSFERENCIA</p>
+						<img
+							src="../src/assets/othersImg/pago.png"
+							alt="Logo"
+							width="50"
+							className="d-inline-block"
+						/>
+            	<img
+							src="../src/assets/othersImg/transferencia.png"
+							alt="Logo"
+							width="40"
 							className="d-inline-block"
 						/>
 					</Col>

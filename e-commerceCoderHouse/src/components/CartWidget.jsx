@@ -14,9 +14,12 @@ const CartWidget = () => {
 	};
 	return (
 		<div>
-			<span className="material-symbols-outlined">shopping_cart</span>
+			<img
+				src="../src/assets/othersImg/cart.png"
+				width="40"
+				alt="Cart"
+			/>
 			<h2>{quantity}</h2>
-			
 		</div>
 	);
 };
