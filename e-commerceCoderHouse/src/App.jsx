@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import ProductDetail from "./components/ProductDetail";
+import ProductDetailContainer from "./components/ProductDetailContainer";
 
 const App = () => {
 	let products = CardItemJson;
@@ -20,14 +21,19 @@ const App = () => {
 			<CategoryMenu />
 
 			<Routes>
-				<Route exact path="/" element={<HomePage />} />
+				<Route exact path="/" element={<HomePage/>} />
 				<Route
 					exact
 					path="/catalogue/:categoryId"
-					element={<ItemListContainer />}
+					element={<ItemListContainer/>}
 				/>
+				<Route
+					exact
+					path="/mascotas/:animal"
+					element={<ItemListContainer/>}
+				/>
+			
 			</Routes>
-<ProductDetail></ProductDetail>
 			<Footer />
 		</div>
 	);

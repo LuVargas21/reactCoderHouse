@@ -12,7 +12,7 @@ const CategoryMenu = () => {
 				<br />
 				<div className="row">
 					<div className="col">
-						<Link to="/catalogue/1/alimentos">
+					<Link to={"/catalogue/Alimento"}>
 							<img
 								src="../src/assets/category/comida.png"
 								width="50"
@@ -23,7 +23,7 @@ const CategoryMenu = () => {
 						</Link>
 					</div>
 					<div className="col">
-						<Link to="/catalogue/2/accesorios/ ">
+					<Link to={"/catalogue/Accesorios"}>
 							<img
 								src="../src/assets/category/cama.png"
 								width="50"
@@ -34,7 +34,7 @@ const CategoryMenu = () => {
 						</Link>
 					</div>
 					<div className="col">
-						<Link to="/catalogue/3/juguetes ">
+					<Link to={"/catalogue/Juguetes"}>
 							<img
 								src="../src/assets/category/juguetes.png"
 								width="50"
@@ -44,7 +44,7 @@ const CategoryMenu = () => {
 						</Link>
 					</div>
 					<div className="col">
-						<Link to="/catalogue/4/higiene ">
+					<Link to={"/catalogue/estetica"}>
 							<img
 								src="../src/assets/category/banos.png"
 								width="50"
@@ -55,7 +55,7 @@ const CategoryMenu = () => {
 						</Link>
 					</div>
 					<div className="col">
-						<Link to="/catalogue/5/salud">
+					<Link to={"/catalogue/Salud"}>
 							<img
 								src="../src/assets/category/medico.png"
 								width="50"

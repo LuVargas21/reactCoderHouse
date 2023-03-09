@@ -19,7 +19,7 @@ function Footer() {
 								className=" "
 							/>
 						</Link>
-						<i class="fi fi-rr-marker">
+						<i className="fi fi-rr-marker">
 							{" "}
 							25 de Mayo 295 | General Paz | Córdoba
 						</i>
@@ -74,9 +74,9 @@ function Footer() {
 					</Col>
 					<Col>
 						<h2>Redes sociales</h2>
-						<i class="fi fi-brands-instagram">Ohmydog.petstore</i> <br />
-						<i class="fi fi-rr-envelope">ohmydog@gmail.com</i> <br />
-						<i class="fi fi-rr-phone-call">+5493517634798 </i>
+						<i className="fi fi-brands-instagram">Ohmydog.petstore</i> <br />
+						<i className="fi fi-rr-envelope">ohmydog@gmail.com</i> <br />
+						<i className="fi fi-rr-phone-call">+5493517634798 </i>
 					</Col>
 				</Row>
 			</Container>

@@ -16,7 +16,7 @@ const CartWidget = () => {
 		<div>
 			<img
 				src="../src/assets/othersImg/cart.png"
-				width="40"
+				width="30"
 				alt="Cart"
 			/>
 			<h2>{quantity}</h2>
