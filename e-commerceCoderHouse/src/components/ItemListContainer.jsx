@@ -9,7 +9,6 @@ const ProductListPage = () => {
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
-		debugger;
 		console.log(CardItemJson);
 		const filteredProducts = CardItemJson.filter(
 			(product) => product.categoryId === categoryId

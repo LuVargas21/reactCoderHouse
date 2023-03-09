@@ -9,6 +9,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
+import ProductDetail from "./components/ProductDetail";
 
 const App = () => {
 	let products = CardItemJson;
@@ -26,6 +27,7 @@ const App = () => {
 					element={<ItemListContainer />}
 				/>
 			</Routes>
+<ProductDetail></ProductDetail>
 			<Footer />
 		</div>
 	);
