@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import ProductDetail from "./ProductDetail";
-import ProductDetailJson from "/src/data/products.json";
+import { useParams } from "react-router-dom";
 
 const ProductDetailContainer = () => {
-let products = ProductDetailJson;
+	const { id } = useParams();
+	return (
+		<div className="product-detail-container">
+			<ProductDetail id={id} />
+		</div>
+	);
+};
 
-  return (
-    <div>
-      <ProductDetail/>
-    </div>
-  )
-}
-
-export default ProductDetailContainer
+export default ProductDetailContainer;

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
 	return (
-		<Box bg="brand.primary">
+		<Box bg="brand.secondary">
 			<Container>
 				<Row>
 					<Col>

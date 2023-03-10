@@ -1,6 +1,16 @@
 import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import { Box } from "@chakra-ui/react";
+import {
+	Card,
+	CardBody,
+	Image,
+	Stack,
+	Heading,
+	Text,
+	ButtonGroup,
+	Button,
+	CardFooter,
+	Divider
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 function CardItem(props) {
@@ -22,22 +32,45 @@ function CardItem(props) {
 
 	return (
 		<div>
-			<Link to="/cardDetail">
-				<Card key={product.id}>
-					<Card.Img variant="top" src={product.image} />
-					<Card.Body>
-						<Card.Title>{product.product}</Card.Title>
-						<Card.Text>{product.description}</Card.Text>
-						<Card.Title>{`$${product.price}`}</Card.Title>
-						<Box>
-							<Button onClick={decrementCount}>-</Button>
-							<input type="number" value={count} min="0" max="10" />
-							<Button onClick={incrementCount}>+</Button>
-						</Box>
-						<Button>Añadir al carrito</Button>
-					</Card.Body>
-				</Card>
-			</Link>
+			<Card maxW="sm" key={product.id}>
+				<CardBody>
+					<Image src={product.image} alt={product.product} borderRadius="lg" />
+					<Stack mt="6" spacing="3">
+						<Heading size="md"> {product.product}</Heading>
+						<Text>{product.description}</Text>
+						<Text color="#FF56A7" fontSize="2xl">
+							${product.price}
+						</Text>
+					</Stack>
+				</CardBody>
+				<Divider />
+				<CardFooter>
+					<ButtonGroup spacing="2">
+						<Button variant="solid" colorScheme="pink">
+							Añadir al carrito
+						</Button>
+						<Button
+							colorScheme="pink"
+							variant="outline"
+							onClick={decrementCount}
+						>
+							{" "}
+							-
+						</Button>
+						<Button
+							colorScheme="pink"
+							variant="outline"
+							onClick={incrementCount}
+						>
+							+
+						</Button>
+					</ButtonGroup>
+					<input width="auto" type="number" value={count} min="0" max="10" />
+				</CardFooter>
+				<Link to={"/ProductDetail/" + product.id}>
+					Ver en detalle{" "}
+				</Link>
+			</Card>
 		</div>
 	);
 }

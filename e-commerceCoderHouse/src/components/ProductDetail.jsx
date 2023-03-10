@@ -1,34 +1,38 @@
-import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import { Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
-const ProductDetail = (props) => {
-	const product = props.product;
+const ProductDetail = ({ id }) => {
+	const [product, setProduct] = useState({});
 
-	const [count, setCount] = useState(0);
+	useEffect(() => {
+		fetch("/src/data/products.json")
+			.then((response) => response.json())
+			.then((data) => {
+				const productData = data.find((product) => product.id === id);
+				setProduct(productData);
+			});
+	
+	}, []);
 
-	const incrementCount = () => {
-		if (count < 10) {
-			setCount(count + 1);
-		}
-	};
+	return (
+		<div className="card">
+			<div className="card-img">
+				<img
+					src={product.image}
+					alt=""
+					width="100"
+					className="d-inline-block align-text-top"
+				/>
+			</div>
+			<div className="card-header">
+				<h5>{product.product}</h5>
+			</div>
+			<div className="card-body">
+				<p>{product.description}</p>
+				<p>Precio: ${product.price}</p>
+			</div>
+			<div></div>
+		</div>
+	);
+};
 
-	const decrementCount = () => {
-		if (count > 0) {
-			setCount(count - 1);
-		}
-	};
-
-  return (
-	<div>
-	  
-
-
-
-
-	</div>
-  )
-}
-
-export default ProductDetail
+export default ProductDetail;

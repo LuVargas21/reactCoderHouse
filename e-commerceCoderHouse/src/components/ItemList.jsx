@@ -5,20 +5,33 @@ import CardItemJson from "/src/data/products.json";
 import { Col, Row } from "react-bootstrap";
 
 const ItemList = () => {
-	const { categoryId } = useParams();
+	const { filter } = useParams();
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
-		
-		console.log(CardItemJson);
-		const filteredProducts = CardItemJson.filter(
-			(product) => product.categoryId === categoryId
-		);
-		setProducts(filteredProducts);
-	}, []);
+		let categoryId;
+		let animalId;
+		console.log("pas");
+		console.log(window.location.pathname);
+		const filters = filter.split("_");
+		if (filters[0] == "category") {
+			categoryId = filters[1];
+			const filteredProducts = CardItemJson.filter(
+				(product) => product.categoryId === categoryId
+			);
+			setProducts(filteredProducts);
+		} else {
+			animalId = filters[1];
+			const filteredProducts = CardItemJson.filter(
+				(product) => product.animal === animalId
+			);
+			setProducts(filteredProducts);
+		}
+	}, [window.location.pathname]);
 
 	return (
 		<div>
+			
 			<Row xs={1} md={2} lg={4} className="g-4">
 				{products.map((product) => (
 					<Col key={product.id}>{<CardItem product={product} />}</Col>

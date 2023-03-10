@@ -9,31 +9,31 @@ import ItemListContainer from "./components/ItemListContainer";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
-import ProductDetail from "./components/ProductDetail";
 import ProductDetailContainer from "./components/ProductDetailContainer";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
-	let products = CardItemJson;
 	return (
 		<div>
 			<NavBar />
 			<WelcomeGreeting />
-			<CategoryMenu />
 
 			<Routes>
-				<Route exact path="/" element={<HomePage/>} />
+				<Route exact path="/" element={<HomePage />} />
 				<Route
 					exact
-					path="/catalogue/:categoryId"
-					element={<ItemListContainer/>}
+					path="/catalogue/:filter"
+					element={<ItemListContainer />}
 				/>
+				<Route exact path="/mascotas/:filter" element={<ItemListContainer />} />
 				<Route
 					exact
-					path="/mascotas/:animal"
-					element={<ItemListContainer/>}
+					path="/productDetail/:id"
+					element={<ProductDetailContainer />}
 				/>
-			
+				<Route exact path="/aboutus" element={<AboutUs />} />
 			</Routes>
+
 			<Footer />
 		</div>
 	);

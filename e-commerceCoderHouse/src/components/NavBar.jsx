@@ -23,10 +23,10 @@ function NavBar() {
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
 						<Link to={"/"}>Home</Link>
-						<Link to={"/"}>Nosotros</Link>
+						<Link to={"/aboutus"}>Nosotros</Link>
 
 						<NavDropdown title="Mascotas" id="basic-nav-dropdown">
-							<Link to={"/mascotas/Perro"}>
+							<Link to={"/mascotas/animal_Perro"}>
 								<NavDropdown.Item href="#action/3.1">
 									<img
 										src="../src/assets/animalsImg/perro.png"
@@ -37,7 +37,7 @@ function NavBar() {
 									Perros
 								</NavDropdown.Item>{" "}
 							</Link>
-							<Link to={"/mascotas/Gato"}>
+							<Link to={"/mascotas/animal_Gato"}>
 								<NavDropdown.Item href="#action/3.2">
 									<img
 										src="../src/assets/animalsImg/gato.png"
@@ -48,7 +48,7 @@ function NavBar() {
 									Gatos
 								</NavDropdown.Item>{" "}
 							</Link>
-							<Link to={"/mascotas/Peces"}>
+							<Link to={"/mascotas/animal_Peces"}>
 								<NavDropdown.Item href="#action/3.3">
 									<img
 										src="../src/assets/animalsImg/pez.png"
@@ -59,7 +59,7 @@ function NavBar() {
 									Peces
 								</NavDropdown.Item>
 							</Link>
-							<Link to={"/mascotas/Aves"}>
+							<Link to={"/mascotas/animal_Aves"}>
 								<NavDropdown.Item href="#action/3.4">
 									<img
 										src="../src/assets/animalsImg/ave.png"
@@ -70,7 +70,7 @@ function NavBar() {
 									Aves
 								</NavDropdown.Item>
 							</Link>
-							<Link to={"/mascotas/Otros"}>
+							<Link to={"/mascotas/animal_Otros"}>
 								<NavDropdown.Item href="#action/3.4">
 									<img
 										src="../src/assets/animalsImg/conejo.png"
