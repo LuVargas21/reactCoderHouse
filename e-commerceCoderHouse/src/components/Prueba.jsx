@@ -1,20 +1,19 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
-const CartWidget = ({ allProducts, setAllProduc }) => {
+const Prueba = ({ allProducts, setAllProduc }) => {
 	const [active, setActive] = useState(false);
-	const [quantity, setQuantity] = useState(0);
-
 	return (
-		<>
+		<div>
+			<h1>Tienda</h1>
+
 			<div className="container-icon">
 				<div className="container-cart-icon" onClick={() => setActive(!active)}>
 					<img src="../src/assets/othersImg/cart.png" width="30" alt="Cart" />
 
 					<div className="count-products">
 						<span id="contador-productos">
-							<h2>{quantity}</h2>
+							<h2>0</h2>
 						</span>
 					</div>
 				</div>
@@ -41,18 +40,12 @@ const CartWidget = ({ allProducts, setAllProduc }) => {
 							</div>
 						</>
 					) : (
-						<div className="cart-empty">
-							<p className="cart-empty">El carrito está vacío</p>
-							<Link to={"/"}>
-								{" "}
-								<i class="fi fi-rr-arrow-left"> <p className="text-nav">  Volver a la página principal</p></i>
-							</Link>
-						</div>
+						<p className="cart-empty">El carrito está vacío</p>
 					)}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
-export default CartWidget;
+export default Prueba;

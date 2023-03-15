@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
-import CardItemJson from "./data/products.json";
 import HomePage from "./components/HomePage";
 import WelcomeGreeting from "./components/Greeting";
-import CategoryMenu from "./components/CategoryMenu";
 import ItemListContainer from "./components/ItemListContainer";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Footer from "./components/Footer";
 import ProductDetailContainer from "./components/ProductDetailContainer";
 import AboutUs from "./components/AboutUs";
 
+
 const App = () => {
+	const [allProducts, setAllProducts] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [countProducts, setCountProducts] = useState(0);
 	return (
 		<div>
 			<NavBar />
@@ -23,7 +24,10 @@ const App = () => {
 				<Route
 					exact
 					path="/catalogue/:filter"
-					element={<ItemListContainer />}
+					element={<ItemListContainer 
+
+					
+					/>}
 				/>
 				<Route exact path="/mascotas/:filter" element={<ItemListContainer />} />
 				<Route
@@ -34,6 +38,8 @@ const App = () => {
 				<Route exact path="/aboutus" element={<AboutUs />} />
 			</Routes>
 
+		¿
+				
 			<Footer />
 		</div>
 	);

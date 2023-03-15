@@ -11,7 +11,7 @@ const ItemList = () => {
 	useEffect(() => {
 		let categoryId;
 		let animalId;
-		console.log("pas");
+	
 		console.log(window.location.pathname);
 		const filters = filter.split("_");
 		if (filters[0] == "category") {
@@ -32,7 +32,7 @@ const ItemList = () => {
 	return (
 		<div>
 			
-			<Row xs={1} md={2} lg={4} className="g-4">
+			<Row xs={1} md={2} lg={4} className="g-4 container-items">
 				{products.map((product) => (
 					<Col key={product.id}>{<CardItem product={product} />}</Col>
 				))}
