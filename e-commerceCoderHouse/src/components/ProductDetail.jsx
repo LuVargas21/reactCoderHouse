@@ -1,31 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {
-	Card,
-	CardBody,
-	Image,
-	Stack,
-	Heading,
-	Text,
-	ButtonGroup,
-	Button,
-	CardFooter,
-	Divider,
-} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 const ProductDetail = ({ id }) => {
 	const [count, setCount] = useState(0);
-
-	const incrementCount = () => {
-		if (count < 10) {
-			setCount(count + 1);
-		}
-	};
-
-	const decrementCount = () => {
-		if (count > 0) {
-			setCount(count - 1);
-		}
-	};
 
 	const [product, setProduct] = useState({});
 
@@ -40,69 +17,38 @@ const ProductDetail = ({ id }) => {
 
 	return (
 		<div>
-			<Card maxW="xl">
-				<CardBody>
-					<Image
+			<div className="product-detail-container">
+				<div className="product-images">
+					<img width="200" src={product.image} alt="Product image 1" />
+
+					<img width="200" src={product.image} alt="Product image 2" />
+				</div>
+				<div>
+					<img
+						width="350"
 						src={product.image}
-						alt=""
-						width="400"
-						className="d-inline-block align-text-top"
-						borderRadius="lg"
+						alt="Main product"
+						className="product-main"
 					/>
-					<Stack mt="6" spacing="3">
-						<Heading size="md">{product.product}</Heading>
-						<Text>{product.description}</Text>
-						<Text color="black" fontSize="2xl">
-							Precio: ${product.price}
-						</Text>
-					</Stack>
-				</CardBody>
-				<Divider />
+				</div>
+				<div className="product-info">
+					<h2 className="text-title-card">{product.product}</h2>
+					<p className="subtext">{product.category} </p>
+					<p className="subtext">{product.description}</p>
+					<p className="subtext">{product.subCategory} </p>
+					<p className="price-card-detail">${product.price}</p>
 
-				<CardFooter>
-					<ButtonGroup spacing="2">
-						<Button variant="solid" colorScheme="pink">
-							Añadir al carrito
-						</Button>
-						<Button
-							colorScheme="pink"
-							variant="outline"
-							onClick={decrementCount}
-						>
-							{" "}
-							-
-						</Button>
-						<Button
-							colorScheme="pink"
-							variant="outline"
-							onClick={incrementCount}
-						>
-							+
-						</Button>
-					</ButtonGroup>
-					<input width="auto" type="number" value={count} min="0" max="10" />
-				</CardFooter>
-			</Card>
-
-
-<div className="small-container single-product">
-	<div className="row">
-		<div className="col-2">
-			<img src="" alt=""  width="100%" id="productImg"/>
-			<div className="small-img-row">
-				<div className="small-img-col"></div>
+					<Button
+						onClick={() => onAddProduct(product)}
+						variant="solid"
+						colorScheme="pink"
+						className="btn-add-cart"
+					>
+						Añadir al carrito
+					</Button>
+				</div>
 			</div>
 		</div>
-
-	</div>
-	
-</div>
-
-
-
-
-		</div>
-
 	);
 };
 
