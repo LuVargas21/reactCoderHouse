@@ -8,38 +8,39 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import ProductDetailContainer from "./components/ProductDetailContainer";
 import AboutUs from "./components/AboutUs";
-
+import StateCounter from "./context/StateCounter";
+import StateCart from "./context/StateCart";
 
 const App = () => {
-	const [allProducts, setAllProducts] = useState([]);
-	const [total, setTotal] = useState(0);
-	const [countProducts, setCountProducts] = useState(0);
 	return (
 		<div>
-			<NavBar />
-			<WelcomeGreeting />
+			<StateCart>
+				<NavBar />
+				<WelcomeGreeting />
 
-			<Routes>
-				<Route exact path="/" element={<HomePage />} />
-				<Route
-					exact
-					path="/catalogue/:filter"
-					element={<ItemListContainer 
+				<StateCounter>
+					<Routes>
+						<Route exact path="/" element={<HomePage />} />
+						<Route
+							exact
+							path="/catalogue/:filter"
+							element={<ItemListContainer />}
+						/>
+						<Route
+							exact
+							path="/mascotas/:filter"
+							element={<ItemListContainer />}
+						/>
+						<Route
+							exact
+							path="/productDetail/:id"
+							element={<ProductDetailContainer />}
+						/>
 
-					
-					/>}
-				/>
-				<Route exact path="/mascotas/:filter" element={<ItemListContainer />} />
-				<Route
-					exact
-					path="/productDetail/:id"
-					element={<ProductDetailContainer />}
-				/>
-				<Route exact path="/aboutus" element={<AboutUs />} />
-			</Routes>
-
-		¿
-				
+						<Route exact path="/aboutus" element={<AboutUs />} />
+					</Routes>{" "}
+				</StateCounter>
+			</StateCart>
 			<Footer />
 		</div>
 	);

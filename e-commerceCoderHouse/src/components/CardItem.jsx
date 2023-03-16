@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useContext } from "react";
 import {
 	Card,
 	CardBody,
@@ -10,24 +10,47 @@ import {
 	Button,
 	CardFooter,
 	Divider,
+	useToast,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { CounterContext } from "../context/StateCounter";
+import { cartContext } from "../context/StateCart";
 
 function CardItem(props) {
 	const product = props.product;
+	const toast = useToast();
+	useContext(CounterContext);
+	const {
+		allProducts,
+		setAllProducts,
+		countProducts,
+		setCountProducts,
+		total,
+		setTotal,
+	} = useContext(cartContext);
 
-	const [count, setCount] = useState(0);
-
-	const incrementCount = () => {
-		if (count < 10) {
-			setCount(count + 1);
+	const onAddProduct = (product) => {
+		toast({
+			title: "Producto añadido al carrito",
+			variant: "subtle",
+			status: "success",
+			duration: 3000,
+			isClosable: true,
+		});
+		if (allProducts.find((item) => item.id === product.id)) {
+			const products = allProducts.map((item) =>
+				item.id === product.id
+					? { ...item, quantityDefect: item.quantityDefect + 1 }
+					: item
+			);
+			setTotal(total + product.price * product.quantityDefect);
+			setCountProducts(countProducts + product.quantityDefect);
+			return setAllProducts([...products]);
 		}
-	};
-
-	const decrementCount = () => {
-		if (count > 0) {
-			setCount(count - 1);
-		}
+		setTotal(total + product.price * product.quantityDefect);
+		setCountProducts(countProducts + product.quantityDefect);
+		setAllProducts([...allProducts, product]);
+		console.log(allProducts);
 	};
 
 	return (
@@ -45,38 +68,26 @@ function CardItem(props) {
 				</CardBody>
 				<Divider />
 				<CardFooter className="info-product">
-					<ButtonGroup spacing="2">
-						<Button variant="solid" colorScheme="pink" className="btn-add-cart">
+					<ButtonGroup
+						spacing="2"
+						display="flex"
+						alignItems="center"
+						justifyContent="center"
+					>
+						<Button
+							onClick={() => onAddProduct(product)}
+							variant="solid"
+							colorScheme="pink"
+							className="btn-add-cart"
+						>
 							Añadir al carrito
 						</Button>
-						<Button
-							variant="solid"
-							colorScheme="pink"
-							className="btn-add-cart"
-							onClick={decrementCount}
-						>
-							{" "}
-							-
-						</Button>
-						<Button
-							variant="solid"
-							colorScheme="pink"
-							className="btn-add-cart"
-							onClick={incrementCount}
-						>
-							+
-						</Button>
-						<input
-							className="count-products-card"
-							width="auto"
-							type="number"
-							value={count}
-							min="0"
-							max="10"
-						/>
 					</ButtonGroup>
 				</CardFooter>
-				<Link to={"/ProductDetail/" + product.id}>Ver en detalle </Link>
+				<Link to={"/ProductDetail/" + product.id}>
+					{" "}
+					<p className="text-nav">Ver en detalle </p>
+				</Link>
 			</Card>
 		</div>
 	);

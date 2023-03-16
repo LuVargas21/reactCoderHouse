@@ -2,42 +2,46 @@
     {
         "id": "1",
         "animal": "Perro",
-        "product": "Alimento Excellent Pollo y Arroz",
+        "product": " Excellent Pollo y Arroz",
         "categoryId": "Alimento",
         "subCategory": "Alimento Seco",
         "image": "/img/pet1.webp",
         "price": 10895,
-        "description": "Adulto +7 - 15kg "
+        "description": "Adulto +7 - 15kg ",
+        "quantityDefect": 1
     },
     {
         "id": "2",
         "animal": "Perro",
-        "product": "Alimento Excellent Gato Sterilized Pollo ",
+        "product": "Excellent Gato Sterilized Pollo ",
         "categoryId": "Alimento",
         "subCategory": "Alimento Seco",
         "image": "/img/pet2.webp ",
         "price": 10105,
-        "description": "7,5 Kg"
+        "description": "7,5 Kg",
+        "quantityDefect": 1
     },
     {
         "id": "3",
         "animal": "Perro",
-        "product": "Alimento Club Performance Adulto",
+        "product": "Club Performance Adulto",
         "categoryId": "Alimento",
         "subCategory": "Alimento Seco",
         "image": "/img/pet3.webp",
         "price": 14505,
-        "description": "20 Kg "
+        "description": "20 Kg ",
+        "quantityDefect": 1
     },
     {
         "id": "4",
         "animal": "Perro",
-        "product": "Sieger Criadores  Perro Adulto y Cachorro ",
+        "product": "Sieger Criadores ",
         "categoryId": "Alimento",
         "subCategory": " Alimento Húmedo ",
         "image": "/img/pet4.webp",
         "price": 463,
-        "description": " 340 grs"
+        "description": " 340 grs. Perro Adulto y Cachorro ",
+        "quantityDefect": 1
     },
     {
         "id": "5",
@@ -47,7 +51,8 @@
         "subCategory": " Alimento Húmedo",
         "image": "/img/pet5.webp",
         "price": 695,
-        "description": " 360 grs "
+        "description": " 360 grs ",
+        "quantityDefect": 1
     },
     {
         "id": "6",
@@ -57,7 +62,8 @@
         "subCategory": "Camas y Mantas",
         "image": "/img/pet6.webp",
         "price": 5200,
-        "description": "Lavable. Talle Único"
+        "description": "Lavable. Talle Único",
+        "quantityDefect": 1
     },
     {
         "id": "7",
@@ -67,7 +73,8 @@
         "subCategory": "Camas y Mantas",
         "image": "/img/pet7.webp",
         "price": 7610,
-        "description": "55x17 cm"
+        "description": "55x17 cm",
+        "quantityDefect": 1
     },
     {
         "id": "8",
@@ -77,7 +84,8 @@
         "subCategory": "Camas y Mantas",
         "image": "/img/pet8.webp",
         "price": 25000,
-        "description": "Talle L"
+        "description": "Talle L",
+        "quantityDefect": 1
     },
     {
         "id": "9",
@@ -87,7 +95,8 @@
         "subCategory": "Camas y Mantas",
         "image": "/img/pet9.webp ",
         "price": 9750,
-        "description": " Talle S "
+        "description": " Talle S ",
+        "quantityDefect": 1
     },
     {
         "id": "10",
@@ -97,7 +106,8 @@
         "subCategory": " Paseo",
         "image": "/img/pet10.webp ",
         "price": 1700,
-        "description": "Rosa. Razas pequeñas "
+        "description": "Rosa. Razas pequeñas ",
+        "quantityDefect": 1
     },
     {
         "id": "11",
@@ -107,7 +117,8 @@
         "subCategory": " Paseo",
         "image": "/img/pet11.webp ",
         "price": 3000,
-        "description": "Talle S "
+        "description": "Talle S ",
+        "quantityDefect": 1
     },
     {
         "id": "12",
@@ -117,7 +128,8 @@
         "subCategory": "Peceras y Acuarios",
         "image": "/img/pet12.webp ",
         "price": 5640,
-        "description": " "
+        "description": " ",
+        "quantityDefect": 1
     },
     {
         "id": "13",
@@ -127,7 +139,8 @@
         "subCategory": "Juguetes ",
         "image": "/img/pet13.webp ",
         "price": 2500,
-        "description": "Material: madera "
+        "description": "Material: madera ",
+        "quantityDefect": 1
     },
     {
         "id": "14",
@@ -137,7 +150,8 @@
         "subCategory": " Shampoo ",
         "image": "/img/pet14.webp ",
         "price": 1700,
-        "description": " 180ml "
+        "description": " 180ml ",
+        "quantityDefect": 1
     },
     {
         "id": "15",
@@ -147,7 +161,8 @@
         "subCategory": " Cepillos y Guantes ",
         "image": "/img/pet15.webp ",
         "price": 2400,
-        "description": "Cerda media "
+        "description": "Cerda media ",
+        "quantityDefect": 1
     },
     {
         "id": "16",
@@ -157,6 +172,7 @@
         "subCategory": "Antiparasitario",
         "image": "/img/pet16.webp ",
         "price": 1700,
-        "description": "De 1 a 2 kg "
+        "description": "De 1 a 2 kg ",
+        "quantityDefect": 1
     }
 ]

@@ -6,7 +6,6 @@ import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-
 function NavBar() {
 	const [allProducts, setAllProducts] = useState([]);
 	const [total, setTotal] = useState(0);
@@ -29,8 +28,12 @@ function NavBar() {
 
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
-							<Link to={"/"}><p className="text-nav"> Home</p></Link>
-							<Link to={"/aboutus"}><p className="text-nav">Nosotros</p></Link>
+							<Link to={"/"}>
+								<p className="text-nav"> Home</p>
+							</Link>
+							<Link to={"/aboutus"}>
+								<p className="text-nav">Nosotros</p>
+							</Link>
 
 							<NavDropdown title="Mascotas" id="basic-nav-dropdown">
 								<Link to={"/mascotas/animal_Perro"}>
@@ -90,16 +93,15 @@ function NavBar() {
 								</Link>
 							</NavDropdown>
 						</Nav>
-						<Link to={"/cart "}>
-							<CartWidget
-								allProducts={allProducts}
-								setAllProducts={setAllProducts}
-								total={total}
-								setTotal={setTotal}
-								countProducts={countProducts}
-								setCountProducts={setCountProducts}
-							/>
-						</Link>
+
+						<CartWidget
+							allProducts={allProducts}
+							setAllProducts={setAllProducts}
+							total={total}
+							setTotal={setTotal}
+							countProducts={countProducts}
+							setCountProducts={setCountProducts}
+						/>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>

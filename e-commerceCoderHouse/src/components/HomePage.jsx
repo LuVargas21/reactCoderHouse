@@ -9,8 +9,8 @@ const HomePage = (props) => {
 			<CategoryMenu/>
 			<Slider />
 			<Box h="7vh">
-				<br />
-				<h1>Productos destacados del mes</h1>
+			
+				<h1 className="menu-title">Productos destacados del mes</h1>
 			</Box>
 			{props.children}
 			<ProductsHome />

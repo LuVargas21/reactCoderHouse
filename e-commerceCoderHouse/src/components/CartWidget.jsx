@@ -1,20 +1,42 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-
-const CartWidget = ({ allProducts, setAllProduc }) => {
+import { cartContext } from "../context/StateCart";
+//import { CounterContext } from "../context/StateCounter";
+const CartWidget = () => {
+	const {
+		allProducts,
+		setAllProducts,
+		countProducts,
+		setCountProducts,
+		total,
+		setTotal,
+	} = useContext(cartContext);
 	const [active, setActive] = useState(false);
-	const [quantity, setQuantity] = useState(0);
 
+	const deleteProduct = (product) => {
+		const results = allProducts.filter((item) => item.id !== product.id);
+
+		setTotal(total - product.price * product.quantityDefect);
+		setCountProducts(countProducts - product.quantityDefect);
+		setAllProducts(results);
+		console.log(results);
+	};
+
+	const cleanCart = () => {
+		setAllProducts([]);
+		setTotal(0);
+		setCountProducts(0);
+	};
 	return (
 		<>
 			<div className="container-icon">
 				<div className="container-cart-icon" onClick={() => setActive(!active)}>
-					<img src="../src/assets/othersImg/cart.png" width="30" alt="Cart" />
+					<img src="../src/assets/cart.png" width="45" alt="Cart" />
 
 					<div className="count-products">
 						<span id="contador-productos">
-							<h2>{quantity}</h2>
+							<h2>{countProducts}</h2>
 						</span>
 					</div>
 				</div>
@@ -24,28 +46,53 @@ const CartWidget = ({ allProducts, setAllProduc }) => {
 				>
 					{allProducts.length ? (
 						<>
-							<div className="row-product hidden ">
-								<div className="cart-product">
-									<div className="info-cart-product">
-										<span className="cantidad-producto-carrito">1</span>
-										<p className="titulo-producto-carrito">Zapatos Nike</p>
-										<span className="precio-producto-carrito">$80</span>
+							<div className="row-product">
+								{allProducts.map((product) => (
+									<div className="cart-product" key={product.id}>
+										<div className="info-cart-product">
+											<span className="cantidad-producto-carrito">
+												{product.quantityDefect}
+											</span>
+											<p className="titulo-producto-carrito">
+												{product.product}
+											</p>
+											<span className="precio-producto-carrito">
+												${product.price}
+											</span>
+										</div>
+										<button onClick={() => deleteProduct(product)}>
+											<i className="icon-close fi fi-br-x"></i>
+										</button>
 									</div>
-									<i className="icon-close fi fi-br-x "></i>
-								</div>
+								))}
 							</div>
-
 							<div className="cart-total">
 								<h3>Total:</h3>
-								<span className="total-pagar">$200</span>
+								<span className="total-pagar">${total} </span>
+							</div>
+							<div className="btn-cart-end">
+								<button className="btn-clear-all" onClick={cleanCart}>
+									Vaciar carrito
+								</button>
+								<button className="btn-shop"> Iniciar compra </button>
 							</div>
 						</>
 					) : (
 						<div className="cart-empty">
-							<p className="cart-empty">El carrito está vacío</p>
+							<p className="cart-empty"> ¡Ups! El carrito está vacío</p>
+							<img
+								src="../src/assets/carro-vacio.png"
+								alt="Logo"
+								width="70"
+								className="d-inline-block align-text-top"
+							/>
+
 							<Link to={"/"}>
 								{" "}
-								<i class="fi fi-rr-arrow-left"> <p className="text-nav">  Volver a la página principal</p></i>
+								<i className="fi fi-rr-arrow-left">
+									{" "}
+									<p className="text-nav"> Volver a la página principal</p>
+								</i>
 							</Link>
 						</div>
 					)}
