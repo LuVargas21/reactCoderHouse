@@ -10,10 +10,14 @@ import ProductDetailContainer from "./components/ProductDetailContainer";
 import AboutUs from "./components/AboutUs";
 import StateCounter from "./context/StateCounter";
 import StateCart from "./context/StateCart";
+import CollectionProducts from "./components/CollectionProducts";
+import DocumentProduct from "./components/DocumentProduct";
 
 const App = () => {
 	return (
 		<div>
+			<CollectionProducts/>
+			<DocumentProduct/>
 			<StateCart>
 				<NavBar />
 				<WelcomeGreeting />

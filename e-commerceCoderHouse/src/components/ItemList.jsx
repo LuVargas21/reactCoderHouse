@@ -34,7 +34,7 @@ const ItemList = () => {
 
 	return (
 		<div>
-			<Row xs={1} md={2} lg={4} className="g-4 container-items">
+			<Row xs={1} md={2} lg={4} className="g-4">
 				{products.map((product) => (
 					<Col key={product.id}>{<CardItem product={product} />}</Col>
 				))}

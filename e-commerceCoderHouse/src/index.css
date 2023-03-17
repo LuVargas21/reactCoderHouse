@@ -8,7 +8,7 @@
 }
 
 body {
-	margin: 8px auto;
+	margin: auto;
 	max-width: auto;
 	font-family: "Lato";
 	color: #333;
@@ -252,10 +252,9 @@ header {
 	boder-radius: 0;
 }
 
-/* Main */
+/* listItems */
 .container-items {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 
@@ -327,7 +326,7 @@ header {
 	text-align: center;
 }
 
-/* CATEGORY MENU  */
+/* category menu */
 
 .category-container {
 	margin: 10px;
