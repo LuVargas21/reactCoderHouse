@@ -74,7 +74,9 @@ const CartWidget = () => {
 								<button className="btn-clear-all" onClick={cleanCart}>
 									Vaciar carrito
 								</button>
-								<button className="btn-shop"> Iniciar compra </button>
+								<button className="btn-shop">
+									<Link to={"/itemlistcart"}> Iniciar compra </Link>{" "}
+								</button>
 							</div>
 						</>
 					) : (

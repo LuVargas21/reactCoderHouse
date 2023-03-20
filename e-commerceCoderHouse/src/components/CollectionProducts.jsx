@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const CollectionProducts = () => {
+	const doc = " "
 	const [products, setProducts] = useState([]);
 	console.log(products);
 	useEffect(() => {
@@ -15,7 +16,10 @@ const CollectionProducts = () => {
 		});
 	}, []);
 
-	return <div></div>;
+	return <div>
+
+	</div>;
+	
 };
 
 export default CollectionProducts;

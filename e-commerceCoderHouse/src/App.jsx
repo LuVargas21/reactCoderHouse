@@ -12,12 +12,13 @@ import StateCounter from "./context/StateCounter";
 import StateCart from "./context/StateCart";
 import CollectionProducts from "./components/CollectionProducts";
 import DocumentProduct from "./components/DocumentProduct";
+import ItemListCart from "./components/ItemListCart";
 
 const App = () => {
 	return (
 		<div>
-			<CollectionProducts/>
-			<DocumentProduct/>
+			<CollectionProducts />
+			<DocumentProduct />
 			<StateCart>
 				<NavBar />
 				<WelcomeGreeting />
@@ -37,9 +38,10 @@ const App = () => {
 						/>
 						<Route
 							exact
-							path="/productDetail/:id"
+							path="/productdetail/:id"
 							element={<ProductDetailContainer />}
 						/>
+						<Route exactpath="/itemlistcart/" element={<ItemListCart />} />
 
 						<Route exact path="/aboutus" element={<AboutUs />} />
 					</Routes>{" "}

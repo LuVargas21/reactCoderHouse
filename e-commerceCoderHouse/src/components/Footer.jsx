@@ -32,10 +32,10 @@ function Footer() {
 							<i className="fi fi-rr-tags"></i>Ofertas
 						</li>
 						<h4 className="text-nav">
-							<i class="fi fi-rr-comment-dollar"></i> Ver medios de pago
+							<i className="fi fi-rr-comment-dollar"></i> Ver medios de pago
 						</h4>
 						<h4 className="text-nav">
-							<i class="fi fi-rr-box-open-full"></i> Seguir mi envío
+							<i className="fi fi-rr-box-open-full"></i> Seguir mi envío
 						</h4>
 					</div>
 
@@ -53,7 +53,7 @@ function Footer() {
 						<ul>
 							<li>
 								{" "}
-								<a href="https://api.whatsapp.com/send/?phone=5493517634798&text&type=phone_number&app_absent=0">
+								<a href="https://api.whatsapp.com/send/?phone=5493517634798&text&type=phone_number&app_absent=0" target="_blank">
 									<p className="text-nav">
 										{" "}
 										<i className="fi fi-rr-phone-call"> </i> +5493517634798{" "}
@@ -61,7 +61,7 @@ function Footer() {
 								</a>
 							</li>
 							<li>
-								<a href="https://mailto:travelrentcar@gmail.com">
+								<a href="https://mailto:travelrentcar@gmail.com" target="_blank">
 									<p className="text-nav">
 										{" "}
 										<i className="fi fi-rr-envelope"></i>ohmydog@gmail.com

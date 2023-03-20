@@ -412,28 +412,22 @@ header {
 	align-items: center;
 	margin: 15px;
 	box-shadow: 0 5px 10px -5px rgb(0 0 0/80%);
+	size: 600px;
 }
 
 .product-images {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.product.main {
-	display: flex;
-	align-items: center;
 }
 
 .product-images img {
-	width: 150px;
+	width: 450px;
 	margin: 10px;
 	border: none;
 	transition: transform 0.3s ease-in-out;
 }
 
 .product-images img:hover {
-	transform: scale(2);
+	transform: scale(1.5);
 }
 
 .product-info {
@@ -444,12 +438,10 @@ header {
 }
 
 .product-info h2 {
-	font-size: 24px;
 	margin-bottom: 10px;
 }
 
 .product-info p {
-	font-size: 16px;
 	margin-bottom: 5px;
 }
 
@@ -458,14 +450,35 @@ header {
 }
 
 .text-title-card {
-	font-size: 9px;
+	font-size: 30px;
 }
 
 .subtext {
+	font-size: 20px;
 }
 .price-card-detail {
 	font-size: 30px;
-
 	font-family: Tahoma;
 	color: #ff56a7;
+}
+
+.btn-add-cart-detail {
+	display: center;
+	border: none;
+	background: none;
+	padding: 10px 15px;
+	width: 200px;
+	height: 50px;
+	background: #ff56a7;
+	color: #000;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+.footer-card-detail {
+	margin-top: 15px;
+}
+
+.btn-back {
+	margin-top: 6px;
 }
