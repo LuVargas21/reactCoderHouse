@@ -70,7 +70,10 @@ const ProductDetail = ({ id }) => {
 					</button>
 					<Link to="/">
 						{" "}
-						<button className="btn-back"> Volver al menú principal </button>
+						<button className="btn-back">
+							{" "}
+							<i className="fi fi-rr-arrow-left"> Volver a la página principal</i>
+						</button>
 					</Link>
 
 					<div className="footer-card-detail">

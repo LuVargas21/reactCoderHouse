@@ -37,69 +37,9 @@ img {
 .card {
 	padding: 1em;
 }
-//**FORMILARIO DE REGISTRO//
-.form-register {
-	background-color: rgb(255 255 255/70%);
-	margin: auto;
-	width: 90%;
-	max-width: 400px;
-	margin-top: 20px;
-	padding: 5px 30px;
-	border-radius: 8px;
-	box-shadow: 0 5px 10px -5px rgb(0 0 0/80%);
-	text-align: center;
-}
-h2 {
-	font-size: 25px;
-}
-.register-title {
-	font-size: rem;
-	margin-bottom: 0.5em;
-	color: #000;
-}
 
-.form-container {
-	margin-top: 3em;
-	display: grid;
-	gap: 2.5em;
-	color: #000;
-}
 
-.form-group {
-	position: relative;
-	margin-top: 6px;
-	color: #000;
-}
 
-.form-input {
-	width: 100%;
-	color: #000;
-	font-size: 1rem;
-	margin-top: 6px;
-	padding: 6em 3em;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid #ff56a7;
-}
-
-.form-register .fomr-label {
-	color: #999;
-	cursor: pointer;
-	position: absolute;
-	top: 0;
-	left: 5px;
-}
-
-.form-btn {
-	background-color: #ff56a7;
-	color: white;
-	font-family: "Roboto Flex", sans-serif;
-	font-weight: 300;
-	font-size: 1rem;
-	padding: 0.8em 0;
-	border: none;
-	border-radius: 0.5em;
-}
 
 /* Header */
 header {
@@ -252,7 +192,7 @@ header {
 	boder-radius: 0;
 }
 
-/* listItems */
+/* list items */
 .container-items {
 	display: grid;
 	gap: 20px;
@@ -482,3 +422,125 @@ header {
 .btn-back {
 	margin-top: 6px;
 }
+
+
+
+//////prueba de css
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-register{
+ background-color:rgb(255 255 255/70%);   
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    margin-top:  20px ;
+    padding: 5px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/80%);
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+}
+.register-title {
+    font-size: 20px;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.form-container {
+    margin-top: 1em;
+    display: grid;
+    gap: 2.5em;
+    color: #000;
+}
+
+.form-group {
+    
+    position: relative;
+    margin-top: 3px;
+    color: #000;
+}
+
+.form-input {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    margin-top: 3px;
+    padding: 6.em 3.em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ff56a7;
+
+}
+
+.form-register .fomr-label {
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+ 
+}
+
+
+.form-btn {
+    background-color: #ff56a7;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 6px ;
+    border: none;
+    border-radius: .5em;
+ }
+
+ .text-order {
+	font-size: 20px;
+	font-height: 80px;
+ }
+
+ /**checkout**/
+
+.table {
+	margin: auto;
+	box-shadow: 0 5px 10px -5px rgb(0 0 0/80%);
+	max-width: auto;
+
+}
+
+.checkout-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+  }
+  
+  .checkout-sidebar {
+	width: 300px;
+  }
+  
+  .checkout-total {
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+  }
+  
+ 
+  .checkout-btn-pagar {
+	background-color: #000;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+  }
+  
+  .checkout-btn-pagar:hover {
+	background-color: #ff56a7;
+	font-size: 20px;
+  }

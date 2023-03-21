@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { cartContext } from "../context/StateCart";
-//import { CounterContext } from "../context/StateCounter";
+
 const CartWidget = () => {
 	const {
 		allProducts,
