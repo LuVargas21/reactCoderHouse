@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
+import ItemList from "./ItemList";
 
 const CollectionProducts = () => {
-	const doc = " "
+	const doc = " ";
 	const [products, setProducts] = useState([]);
 	//console.log(products);
 
@@ -17,10 +18,11 @@ const CollectionProducts = () => {
 		});
 	}, []);
 
-	return <div>
-
-	</div>;
-	
+	return (
+		<div>
+		
+		</div>
+	);
 };
 
 export default CollectionProducts;

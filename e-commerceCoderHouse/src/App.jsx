@@ -9,17 +9,12 @@ import Footer from "./components/Footer";
 import ProductDetailContainer from "./components/ProductDetailContainer";
 import AboutUs from "./components/AboutUs";
 import StateCart from "./context/StateCart";
-import CollectionProducts from "./components/CollectionProducts";
-import DocumentProduct from "./components/DocumentProduct";
 
 import Checkout from "./components/Checkout";
 
 const App = () => {
 	return (
 		<div>
-			<CollectionProducts />
-			<DocumentProduct />
-
 			<StateCart>
 				<NavBar />
 				<WelcomeGreeting />

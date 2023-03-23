@@ -36,7 +36,6 @@ const ProductDetail = ({ id }) => {
 		setTotal(total + product.price * product.quantityDefect);
 		setCountProducts(countProducts + product.quantityDefect);
 		setAllProducts([...allProducts, product]);
-		console.log(allProducts);
 	};
 
 	useEffect(() => {
@@ -72,7 +71,10 @@ const ProductDetail = ({ id }) => {
 						{" "}
 						<button className="btn-back">
 							{" "}
-							<i className="fi fi-rr-arrow-left"> Volver a la página principal</i>
+							<i className="fi fi-rr-arrow-left">
+								{" "}
+								Volver a la página principal
+							</i>
 						</button>
 					</Link>
 

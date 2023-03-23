@@ -1,9 +1,18 @@
 import React, { useContext, useState } from "react";
 import { cartContext } from "../context/StateCart";
-import SendOrder from "./SendOrder";
+import { Link } from "react-router-dom";
+// import SendOrder from "./SendOrder";
+
 const Checkout = () => {
 	const { allProducts, total } = useContext(cartContext);
-	const [showForm, setShowForm] = useState(false);
+	// const [showForm, setShowForm] = useState(false);
+
+	// const handleGoToPay = () => {
+	// 	setShowForm(true);
+
+	// 	window.scrollTo(0, 0);
+	// };
+
 	return (
 		<div>
 			<h2 className="menu-title">Detalles de tu compra</h2>
@@ -48,15 +57,11 @@ const Checkout = () => {
 						<h3 className="titulo-producto-carrito">Total a pagar:</h3>
 						<span className="precio-producto-carrito">${total}</span>
 					</div>
-					<button
-						className="checkout-btn-pagar"
-						onClick={() => setShowForm(true)}
-					>
-						Ir a pagar
-					</button>
+					<button className="checkout-btn-pagar">Ir a pagar</button>
 				</div>
+
+				{/* {showForm ? <SendOrder /> : <span></span>} */}
 			</div>
-			{showForm && <SendOrder />}
 		</div>
 	);
 };

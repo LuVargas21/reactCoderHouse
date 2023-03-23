@@ -7,12 +7,16 @@ const SendOrder = () => {
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
 	const [orderId, setOrderId] = useState(false);
-
+	const [showOrder, setShowOrder] = useState("");
 	const db = getFirestore();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		addDoc(orderCollection, order).then(({ id }) => setOrderId(id));
+		addDoc(orderCollection, order).then(({ id }) => {
+			setOrderId(id);
+			setShowOrder(true);
+			window.scrollTo(0, 0);
+		});
 	};
 
 	const order = {
@@ -36,6 +40,7 @@ const SendOrder = () => {
 						<input
 							type="text"
 							onChange={(e) => setName(e.target.value)}
+							value={name}
 							className="form-input"
 							id="name"
 							name="user_name"
@@ -51,6 +56,7 @@ const SendOrder = () => {
 						<input
 							type="email"
 							onChange={(e) => setEmail(e.target.value)}
+							value={email}
 							className="form-input"
 							id="mail"
 							name="user_mail"
@@ -64,6 +70,7 @@ const SendOrder = () => {
 						<input
 							type="text"
 							onChange={(e) => setPhone(e.target.value)}
+							value={phone}
 							className="form-input"
 							id="phone"
 							name="user_phone"
@@ -82,8 +89,11 @@ const SendOrder = () => {
 					</button>
 				</div>
 			</form>
-			<div className="order-id"></div>
-			<h2 className="text-order">Nro de orden: {orderId}</h2>
+			{showOrder && (
+				<div className="order-id">
+					<h2 className="text-order">Nro de orden: {orderId}</h2>
+				</div>
+			)}
 		</div>
 	);
 };
