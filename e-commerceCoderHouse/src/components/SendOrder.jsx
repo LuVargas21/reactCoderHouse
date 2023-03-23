@@ -6,7 +6,8 @@ const SendOrder = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
-	const [orderId, setOrderId] = useState("");
+	const [orderId, setOrderId] = useState(false);
+
 	const db = getFirestore();
 
 	const handleSubmit = (e) => {
@@ -26,9 +27,7 @@ const SendOrder = () => {
 			<form onSubmit={handleSubmit} className="form-register">
 				<div className="form-container">
 					<div>
-						<h2 className="register-title">
-							Completa el formulario.
-						</h2>
+						<h2 className="register-title">Completa el formulario.</h2>
 					</div>
 					<div className="form-group">
 						<label htmlFor="user_name" className="form-label">
@@ -77,13 +76,14 @@ const SendOrder = () => {
 						className="form-btn"
 						name="register"
 						id="user_register"
+						onClick={() => setOrderId(!orderId)}
 					>
 						Enviar
 					</button>
-					<div className="order-id"></div>
-					<h2 className="text-order">Nro de orden: {orderId}</h2>
 				</div>
 			</form>
+			<div className="order-id"></div>
+			<h2 className="text-order">Nro de orden: {orderId}</h2>
 		</div>
 	);
 };

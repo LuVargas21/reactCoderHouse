@@ -1,15 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import CardItem from "./CardItem";
 import { useParams } from "react-router-dom";
 import CardItemJson from "/src/data/products.json";
 import { Col, Row } from "react-bootstrap";
-
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const ItemList = () => {
-
-
 	const { filter } = useParams();
 	const [products, setProducts] = useState([]);
+
+	useEffect(() => {
+		const db = getFirestore();
+		const itemsCollection = collection(db, "productos");
+		getDocs(itemsCollection).then((snapshot) => {
+			const docs = snapshot.docs.map((doc) => doc.data(), doc.id);
+			console.log(docs);
+			setProducts(docs);
+		});
+	}, []);
 
 	useEffect(() => {
 		let categoryId;

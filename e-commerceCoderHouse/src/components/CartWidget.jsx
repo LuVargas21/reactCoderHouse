@@ -12,6 +12,7 @@ const CartWidget = () => {
 		total,
 		setTotal,
 	} = useContext(cartContext);
+
 	const [active, setActive] = useState(false);
 
 	const deleteProduct = (product) => {
@@ -74,8 +75,9 @@ const CartWidget = () => {
 								<button className="btn-clear-all" onClick={cleanCart}>
 									Vaciar carrito
 								</button>
+
 								<button className="btn-shop">
-									<Link to={"/itemlistcart"}> Iniciar compra </Link>{" "}
+									<Link to={"/checkout"}>Iniciar compra</Link>
 								</button>
 							</div>
 						</>

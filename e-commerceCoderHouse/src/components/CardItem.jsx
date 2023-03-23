@@ -13,13 +13,13 @@ import {
 	useToast,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { CounterContext } from "../context/StateCounter";
+
 import { cartContext } from "../context/StateCart";
 
 function CardItem(props) {
 	const product = props.product;
 	const toast = useToast();
-	useContext(CounterContext);
+
 	const {
 		allProducts,
 		setAllProducts,
