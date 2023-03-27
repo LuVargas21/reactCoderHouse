@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 import ProductDetailContainer from "./components/ProductDetailContainer";
 import AboutUs from "./components/AboutUs";
 import StateCart from "./context/StateCart";
-
 import Checkout from "./components/Checkout";
+import SendOrder from "./components/SendOrder";
 
 const App = () => {
 	return (
@@ -18,6 +18,7 @@ const App = () => {
 			<StateCart>
 				<NavBar />
 				<WelcomeGreeting />
+
 				<Routes>
 					<Route exact path="/" element={<HomePage />} />
 					<Route
@@ -38,7 +39,8 @@ const App = () => {
 
 					<Route exact path="/aboutus" element={<AboutUs />} />
 					<Route exact path="/checkout" element={<Checkout />} />
-				</Routes>{" "}
+					<Route exact path="/sendorder" element={<SendOrder />} />
+				</Routes>
 			</StateCart>
 
 			<Footer />

@@ -2,10 +2,27 @@ import React, { useState, useEffect, useContext } from "react";
 import { cartContext } from "../context/StateCart";
 import { useToast } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
-const ProductDetail = ({ id }) => {
+const ProductDetail = () => {
+	const { id } = useParams();
+	const [product, setProduct] = useState([]);
+
+	useEffect(() => {
+		const db = getFirestore();
+		const oneItem = doc(db, "productos", `${id}`);
+		getDoc(oneItem).then((snapshot) => {
+			if (snapshot.exists()) {
+				const docs = snapshot.data();
+				console.log(docs);
+				setProduct(docs);
+			}
+		});
+	}, []);
+
 	const toast = useToast();
-	const [product, setProduct] = useState({});
+
 	const {
 		allProducts,
 		setAllProducts,
@@ -38,14 +55,14 @@ const ProductDetail = ({ id }) => {
 		setAllProducts([...allProducts, product]);
 	};
 
-	useEffect(() => {
-		fetch("/src/data/products.json")
-			.then((response) => response.json())
-			.then((data) => {
-				const productData = data.find((product) => product.id === id);
-				setProduct(productData);
-			});
-	}, []);
+	// useEffect(() => {
+	// 	fetch("/src/data/products.json")
+	// 		.then((response) => response.json())
+	// 		.then((data) => {
+	// 			const productData = data.find((product) => product.id === id);
+	// 			setProduct(productData);
+	// 		});
+	// }, []);
 
 	return (
 		<div>

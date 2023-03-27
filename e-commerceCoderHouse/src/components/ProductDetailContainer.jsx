@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 const ProductDetailContainer = () => {
 	const { id } = useParams();
 	return (
-		<div className="product-detail-container">
+		<div className="">
 			<ProductDetail id={id} />
 		</div>
 	);

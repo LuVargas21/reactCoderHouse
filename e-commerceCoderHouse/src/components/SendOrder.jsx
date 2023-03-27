@@ -3,6 +3,16 @@ import { collection, addDoc, getFirestore } from "firebase/firestore";
 import { useState } from "react";
 
 const SendOrder = () => {
+	const [showForm, setShowForm] = useState(false);
+
+	// const handleGoToPay = () => {
+	// 	setShowForm(true);
+
+	// 	window.scrollTo(0, 0);
+	// };
+	{
+		/* {showForm ? <SendOrder /> : <span></span>} */
+	}
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
@@ -26,8 +36,11 @@ const SendOrder = () => {
 	};
 	const orderCollection = collection(db, "orden");
 
+	const handleInputChange = (e) => setInput(e.target.value);
+
 	return (
 		<div>
+			
 			<form onSubmit={handleSubmit} className="form-register">
 				<div className="form-container">
 					<div>
@@ -88,7 +101,7 @@ const SendOrder = () => {
 						Enviar
 					</button>
 				</div>
-			</form>
+			</form>{" "}
 			{showOrder && (
 				<div className="order-id">
 					<h2 className="text-order">Nro de orden: {orderId}</h2>

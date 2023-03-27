@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
-import CardItemJson from "/src/data/products.json";
 import CardItem from "./CardItem";
-import CollectionProducts from "./CollectionProducts"
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+
 function ProductsHome() {
-	let products = CardItemJson;
-	let dbProducts = CollectionProducts;
-	console.log(dbProducts);
+	const doc = " ";
+	const [products, setProducts] = useState([]);
+	//console.log(products);
+
+	useEffect(() => {
+		const db = getFirestore();
+		const itemsCollection = collection(db, "productos");
+		getDocs(itemsCollection).then((snapshot) => {
+			const docs = snapshot.docs.map((doc) => doc.data(), doc.id);
+			console.log(docs);
+			setProducts(docs);
+		});
+	}, []);
+
 	return (
 		<div>
 			<Row xs={1} md={2} lg={4} className="g-4">
