@@ -55,15 +55,6 @@ const ProductDetail = () => {
 		setAllProducts([...allProducts, product]);
 	};
 
-	// useEffect(() => {
-	// 	fetch("/src/data/products.json")
-	// 		.then((response) => response.json())
-	// 		.then((data) => {
-	// 			const productData = data.find((product) => product.id === id);
-	// 			setProduct(productData);
-	// 		});
-	// }, []);
-
 	return (
 		<div>
 			<div className="product-detail-container">

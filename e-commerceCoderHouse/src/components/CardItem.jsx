@@ -50,7 +50,6 @@ function CardItem(props) {
 		setTotal(total + product.price * product.quantityDefect);
 		setCountProducts(countProducts + product.quantityDefect);
 		setAllProducts([...allProducts, product]);
-		console.log(allProducts);
 	};
 
 	return (

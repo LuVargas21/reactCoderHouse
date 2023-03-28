@@ -40,6 +40,7 @@ const Checkout = () => {
 										${product.price * product.quantityDefect}
 									</td>
 								</tr>
+								
 							))}
 						</tbody>
 					</table>

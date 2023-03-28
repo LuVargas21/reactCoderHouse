@@ -1,18 +1,12 @@
 import React from "react";
 import { collection, addDoc, getFirestore } from "firebase/firestore";
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { cartContext } from "../context/StateCart";
+import Prueba from "./Prueba"
 const SendOrder = () => {
-	const [showForm, setShowForm] = useState(false);
+	
+	const { allProducts, total } = useContext(cartContext);
 
-	// const handleGoToPay = () => {
-	// 	setShowForm(true);
-
-	// 	window.scrollTo(0, 0);
-	// };
-	{
-		/* {showForm ? <SendOrder /> : <span></span>} */
-	}
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
@@ -40,8 +34,8 @@ const SendOrder = () => {
 
 	return (
 		<div>
-			
-			<form onSubmit={handleSubmit} className="form-register">
+		<Prueba></Prueba>
+			{/* <form onSubmit={handleSubmit} className="form-register">
 				<div className="form-container">
 					<div>
 						<h2 className="register-title">Completa el formulario.</h2>
@@ -106,7 +100,7 @@ const SendOrder = () => {
 				<div className="order-id">
 					<h2 className="text-order">Nro de orden: {orderId}</h2>
 				</div>
-			)}
+			)} */}
 		</div>
 	);
 };

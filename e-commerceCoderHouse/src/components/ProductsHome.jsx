@@ -6,7 +6,6 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 function ProductsHome() {
 	const doc = " ";
 	const [products, setProducts] = useState([]);
-	//console.log(products);
 
 	useEffect(() => {
 		const db = getFirestore();

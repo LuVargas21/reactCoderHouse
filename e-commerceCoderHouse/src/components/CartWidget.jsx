@@ -21,7 +21,6 @@ const CartWidget = () => {
 		setTotal(total - product.price * product.quantityDefect);
 		setCountProducts(countProducts - product.quantityDefect);
 		setAllProducts(results);
-		console.log(results);
 	};
 
 	const cleanCart = () => {
