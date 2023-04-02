@@ -463,13 +463,10 @@ header {
 
 /** sendorder **/
 input {
-	border: none; 
+	border: none;
 	border-bottom: 1.5px solid #ff56a7;
-	margin-bottom: 20px; 
-	width: auto;
-    margin-top: 6px;
-	
-  }
+	margin-top: 6px;
+}
 
 .text-title {
 	font-size: 28px;
@@ -495,6 +492,9 @@ input {
 	margin-right: auto;
 }
 
+.step{
+	margin: 10px;
+}
 .button-confirm {
 	padding: 20px;
 }

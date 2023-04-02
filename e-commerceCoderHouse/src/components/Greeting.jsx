@@ -1,8 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 const WelcomeGreeting = ({ greeting }) => {
 	return (
 		<div>
