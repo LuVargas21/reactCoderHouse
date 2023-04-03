@@ -1,15 +1,13 @@
-import React from "react";
-import { Box } from "@chakra-ui/react";
+import React from 'react'
+import ItemList from './ItemList'
+import CategoryMenu from './CategoryMenu'
+const ItemListContainer = () => {
+  return (
+	<div>
+		<CategoryMenu />
+	  <ItemList></ItemList>
+	</div>
+  )
+}
 
-
-const ItemListContainer = ({ greeting }) => {
-	return (
-		<div>
-			<Box h="40vh" bg="#3BD1B8">
-				{greeting}
-			</Box>
-		</div>
-	);
-};
-
-export default ItemListContainer; 
+export default ItemListContainer
